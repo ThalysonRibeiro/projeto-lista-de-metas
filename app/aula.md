@@ -20,3 +20,18 @@ Como um lego. você irá utilizar peças pra criar algoritimos, ou seja, para re
 Coletar os dados
 Processar os dados (manipular, alterar ...)
 Apresentar os dados
+
+## Escopo e variáveis
+
+Variáveis globais e locais
+Constantes
+
+## Tipos de dados
+
+Strings "texto"
+Number 2, 1.2
+functions
+
+## Operadores
+
+Operadores de atribuição de valor
