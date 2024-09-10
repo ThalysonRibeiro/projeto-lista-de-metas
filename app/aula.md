@@ -39,25 +39,35 @@ Como um lego. você irá utilizar peças pra criar algoritimos, ou seja, para re
 
 ## Estruturas de dados:
 
-### Arrays
+### Arrays:
 
  - [x] Uma lista que contem qualquer tipo de dado
 
- ### Object
+ ### Object:
 
  - [x] Atributos e métodos
  - [x] Criação e manipulação de objetos
  - [x] Acesso a propiedades de objetos
 
- ### Functions
+ ### Functions:
 
  - [x] Criar, passar argumentos
  - [x] Executar
  - [x] Arrow function / named function
 
- # Estrutura de rapetição
+ # Estrutura de rapetição:
 
  - [x] while
 
- # Condicionais
+ # Condicionais:
  - [x] swith
+
+ ## Módulos node.js:
+
+ - [x] Importação de modulos (require, CommonJS)
+ - [x] Biblioteca 'inquirer' para criar pronpts interativos
+
+
+## Programação assícronas e promesas:
+
+- [x] Uso de funções (async/await)
