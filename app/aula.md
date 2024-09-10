@@ -5,7 +5,7 @@ Como um lego. você irá utilizar peças pra criar algoritimos, ou seja, para re
 
    **Algoritomos**: Senquência de passos lógicos e finita para resolução de um problema.
 
-## Peças de uma linguagem
+## Peças de uma linguagem:
 
 - Comentarios
 - Declarações de variáveis (const, let)
@@ -15,23 +15,42 @@ Como um lego. você irá utilizar peças pra criar algoritimos, ou seja, para re
 - Controle de fluxo (if/else)
 - Estruturas de repetições (for, forof, while)
 
-# Fases de resoloção de um problema
+# Fases de resoloção de um problema:
 
-Coletar os dados
-Processar os dados (manipular, alterar ...)
-Apresentar os dados
+ - [x] Coletar os dados
+ - [x] Processar os dados (manipular, alterar ...)
+ - [x] Apresentar os dados
 
-## Escopo e variáveis
+## Escopo e variáveis:
 
-Variáveis globais e locais
-Constantes
+ - [x] Variáveis globais e locais
+ - [x] Constantes
 
-## Tipos de dados
+## Tipos de dados:
 
-Strings "texto"
-Number 2, 1.2
-functions
+ - [x] Strings "texto"
+ - [x] Number 2, 1.2
+ - [x] functions
 
-## Operadores
+## Operadores:
 
-Operadores de atribuição de valor
+ - [x] Operadores de atribuição de valor
+ - [x] Operador de concatenação
+
+## Estruturas de dados:
+
+### Arrays
+
+ - [x] Uma lista que contem qualquer tipo de dado
+
+ ### Object
+
+ - [x] Atributos e métodos
+ - [x] Criação e manipulação de objetos
+ - [x] Acesso a propiedades de objetos
+
+ ### Functions
+
+ - [x] Criar, passar argumentos
+ - [x] Executar
+ - [x] Arrow function / named function
