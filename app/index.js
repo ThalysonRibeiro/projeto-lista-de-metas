@@ -36,11 +36,29 @@
 
 // }
 
+// const start = () => {
+//     let count = 0;
+//     while (count <= 10) {
+//         console.log(count);
+//         count++;
+//     }
+// }
+// start();
+
 const start = () => {
-    let count = 0;
-    while (count <= 10) {
-        console.log(count);
-        count++;
+    let opcao = "cadrastrar";
+    while (true) {
+        switch (opcao) {
+            case "cadastar":
+                console.log("vamos cadastrar");
+                break;
+            case "listar":
+                console.log("vamos listar");
+                break;
+
+            case "sair":
+                return
+        }
     }
 }
 start();

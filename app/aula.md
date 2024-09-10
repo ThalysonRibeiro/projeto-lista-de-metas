@@ -58,4 +58,6 @@ Como um lego. você irá utilizar peças pra criar algoritimos, ou seja, para re
  # Estrutura de rapetição
 
  - [x] while
- 
+
+ # Condicionais
+ - [x] swith
