@@ -15,24 +15,32 @@
 // console.log(metas[0] + " " + metas[1]);
 
 //object
-let meta = {
-    value: "ler um livro por mês",
-    checked: true
-}
+// let meta = {
+//     value: "ler um livro por mês",
+//     checked: true
+// }
 
-let metas = [
-    meta,
-    {
-        value: "caminhar 20 minutos por dia",
-        checked: false
-    }
-]
+// let metas = [
+//     meta,
+//     {
+//         value: "caminhar 20 minutos por dia",
+//         checked: false
+//     }
+// ]
 
-console.log(metas[1].value);
+// console.log(metas[1].value);
 
 //function arrow function
 // function criarMeta() { }
-const criarMeta = () => {
+// const criarMeta = () => {
 
+// }
+
+const start = () => {
+    let count = 0;
+    while (count <= 10) {
+        console.log(count);
+        count++;
+    }
 }
-
+start();
