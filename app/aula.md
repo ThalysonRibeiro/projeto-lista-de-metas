@@ -43,6 +43,7 @@ Como um lego. você irá utilizar peças pra criar algoritimos, ou seja, para re
 ### Arrays:
 
  - [x] Uma lista que contem qualquer tipo de dado
+ - [x] Metodos de array
 
  ### Object:
 
