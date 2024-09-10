@@ -17,15 +17,18 @@
 //object
 let meta = {
     value: "ler um livro por mês",
-    checked: false,
-    isChecked: (info) => {
-        console.log(info);
-
-    }
+    checked: true
 }
-meta.value = "não é mais ler um livro"
-meta.isChecked(meta.value);
 
+let metas = [
+    meta,
+    {
+        value: "caminhar 20 minutos por dia",
+        checked: false
+    }
+]
+
+console.log(metas[1].value);
 
 //function arrow function
 // function criarMeta() { }
