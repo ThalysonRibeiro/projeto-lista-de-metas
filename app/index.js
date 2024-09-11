@@ -104,6 +104,22 @@ const listarMetas = async () => {
     console.log("Meta(s) marcadas como concluída(s)");
 }
 
+const metasRealizadas = async () => {
+    const realizadas = metas.filter((meta) => {
+        return meta.checked;;
+    })
+    console.log(realizadas);
+    if (realizadas.length == 0) {
+        console.log("Não exisstem metas realizadas");
+        return;
+    }
+
+    await select({
+        message: "Metas Realizadas",
+        choices: [...realizadas]
+    })
+}
+
 // Função principal para controlar o fluxo do programa.
 const start = async () => {
 
@@ -122,6 +138,10 @@ const start = async () => {
                     value: "listar"
                 },
                 {
+                    name: "Metas realizadas", // Opção para listar e marcar metas como concluídas.
+                    value: "realizadas"
+                },
+                {
                     name: "Sair", // Opção para encerrar o programa.
                     value: "sair"
                 }
@@ -138,6 +158,9 @@ const start = async () => {
             case "listar":
                 // Se a opção for "listar", chama a função para listar e marcar metas.
                 await listarMetas();
+                break;
+            case "realizadas":
+                await metasRealizadas();
                 break;
             case "sair":
                 // Se a opção for "sair", exibe uma mensagem de despedida e encerra o loop.
