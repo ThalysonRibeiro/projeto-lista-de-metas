@@ -116,9 +116,33 @@ const metasRealizadas = async () => {
     }
 
     await select({
-        message: "Metas Realizadas " + realizadas.length,
+        message: "Metas Realizadas: " + realizadas.length,
         choices: [...realizadas]
     })
+}
+
+const deletarMetas = async () => {
+    const metadDesmarcadas = metas.map((meta) => {
+        return { value: meta.value, checked: false };
+    });
+
+    const itensADeletar = await checkbox({
+        message: "Use as setas para mudar de meta, o espaço para marcar ou desmarcar e o enter para finalizar.",
+        choices: [...metadDesmarcadas], // Exibe as metas disponíveis para seleção.
+        instructions: false, // Remove as instruções padrão do prompt.
+    });
+
+    if (itensADeletar.length == 0) {
+        console.log("Nenhum item pra deletar!");
+        return;
+    }
+    itensADeletar.forEach((item) => {
+        metas = metas.filter((meta) => {
+            return meta.value != item;
+        })
+    })
+    console.log("Metas deletas com sucesso!");
+
 }
 
 // Função principal para controlar o fluxo do programa.
@@ -145,6 +169,9 @@ const start = async () => {
                 {
                     name: "Metas abertas", // Opção para listar e marcar metas como concluídas.
                     value: "abertas"
+                }, {
+                    name: "Deletar metas", // Opção para listar e marcar metas como concluídas.
+                    value: "deletar"
                 },
                 {
                     name: "Sair", // Opção para encerrar o programa.
@@ -164,7 +191,7 @@ const start = async () => {
             }
 
             await select({
-                message: "Metas Abertas " + abertas.length,
+                message: "Metas Abertas: " + abertas.length,
                 choices: [...abertas]
             })
         }
@@ -185,6 +212,9 @@ const start = async () => {
                 break;
             case "abertas":
                 await metasAbertas();
+                break;
+            case "deletar":
+                await deletarMetas();
                 break;
             case "sair":
                 // Se a opção for "sair", exibe uma mensagem de despedida e encerra o loop.
