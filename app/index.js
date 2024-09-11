@@ -83,15 +83,16 @@ const listarMetas = async () => {
         instructions: false, // Remove as instruções padrão do prompt.
     });
 
+    // Define todas as metas como não concluídas (checked: false).
+    metas.forEach((m) => {
+        m.checked = false;
+    });
+
     // Verifica se nenhuma meta foi selecionada.
     if (respostas.length == 0) {
         console.log("Nenhuma meta selecionada");
     }
 
-    // Define todas as metas como não concluídas (checked: false).
-    metas.forEach((m) => {
-        m.checked = false;
-    });
 
     // Marca as metas que foram selecionadas como concluídas (checked: true).
     respostas.forEach(resposta => {
