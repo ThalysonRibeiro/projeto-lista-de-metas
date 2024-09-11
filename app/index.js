@@ -116,7 +116,7 @@ const metasRealizadas = async () => {
     }
 
     await select({
-        message: "Metas Realizadas",
+        message: "Metas Realizadas " + realizadas.length,
         choices: [...realizadas]
     })
 }
@@ -143,11 +143,31 @@ const start = async () => {
                     value: "realizadas"
                 },
                 {
+                    name: "Metas abertas", // Opção para listar e marcar metas como concluídas.
+                    value: "abertas"
+                },
+                {
                     name: "Sair", // Opção para encerrar o programa.
                     value: "sair"
                 }
             ]
         });
+
+        const metasAbertas = async () => {
+            const abertas = metas.filter((meta) => {
+                // return true.checked != true;
+                return !true.checked;
+            })
+            if (abertas.length == 0) {
+                console.log("Não existem metas abertas :)");
+                return;
+            }
+
+            await select({
+                message: "Metas Abertas " + abertas.length,
+                choices: [...abertas]
+            })
+        }
 
         // Verifica a opção selecionada e executa a ação correspondente.
         switch (opcao) {
@@ -162,6 +182,9 @@ const start = async () => {
                 break;
             case "realizadas":
                 await metasRealizadas();
+                break;
+            case "abertas":
+                await metasAbertas();
                 break;
             case "sair":
                 // Se a opção for "sair", exibe uma mensagem de despedida e encerra o loop.
