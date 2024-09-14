@@ -28,7 +28,7 @@ Este é um aplicativo de console para gerenciar metas, onde você pode cadastrar
 1. Execute o aplicativo:
 
    ```bash
-   node app.js
+   node index.js
    ```
 
 2. Você verá um menu interativo no terminal com as seguintes opções:
