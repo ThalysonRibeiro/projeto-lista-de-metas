@@ -1,4 +1,6 @@
-# Gerenciador de Metas
+# Porjeto feito no evento nlw Rocketseat
+
+## Gerenciador de Metas
 
 Este é um aplicativo de console para gerenciar metas, onde você pode cadastrar, listar, marcar como realizadas, visualizar metas abertas, excluir metas e muito mais. O app salva e carrega as metas de um arquivo JSON, permitindo que você acompanhe seu progresso.
 
